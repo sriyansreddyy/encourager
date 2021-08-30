@@ -1,0 +1,76 @@
+:root {
+    --gradient: linear-gradient(90deg, #F17C58, #E94584, #24AADB , #27DBB1, #FFDC18, #FF3706);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advice-eye {
+    width: 30em;
+    height: 30em;
+    border-radius: 50%;
+    background: lightblue;
+    text-align: center;
+    padding: 0.5em;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.title, a {
+  margin: 0 0 .5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3rem;
+  color: #ee6352;
+  line-height: .8;
+  margin: 0;
+  background: var(--gradient);
+  color: #fff;
+  display: inline-block;
+  background-size: 300%;
+  transition: background-position 1s;
+  padding: 10px 20px;
+}
+
+a {
+    /* padding: 2em; */
+    text-decoration: none;
+    background: var(--gradient);
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.title:hover {
+  background-position: right;
+}
+
+button {
+    border: none;
+    padding: 0.5em 1em;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
